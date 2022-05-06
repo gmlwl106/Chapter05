@@ -1,10 +1,9 @@
 package com.javaex.ex03;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,9 +11,8 @@ public class Ex02 {
 
 	public static void main(String[] args) throws IOException {
 		
-		InputStream in = new FileInputStream("D:\\javaStudy\\File\\PhoneDB.txt");
-		InputStreamReader isr = new InputStreamReader(in);
-		BufferedReader br = new BufferedReader(isr);
+		Reader r = new FileReader("D:\\javaStudy\\File\\PhoneDB.txt");
+		BufferedReader br = new BufferedReader(r);
 		
 		List<Person> pList = new ArrayList<Person>();
 		
