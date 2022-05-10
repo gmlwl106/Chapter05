@@ -17,9 +17,7 @@ public class PhoneListApp {
 		//input
 		Reader r = new FileReader("D:\\javaStudy\\File\\PhoneDB.txt");
 		BufferedReader br = new BufferedReader(r);
-		//output
-		Writer w = new FileWriter("D:\\javaStudy\\File\\PhoneDB-copy.txt");
-		BufferedWriter bw = new BufferedWriter(w);
+		
 		
 		
 		//리스트
@@ -41,6 +39,10 @@ public class PhoneListApp {
 		
 		//파일에 없는 내용 추가
 		pArray.add(new Person("박희지", "010-4444-2222", "02-111-2222"));
+		
+		//output
+		Writer w = new FileWriter("D:\\javaStudy\\File\\PhoneDB-copy.txt");
+		BufferedWriter bw = new BufferedWriter(w);
 		
 		for(Person p : pArray) {
 			//pArray 출력
